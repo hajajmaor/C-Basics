@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2d.c" />
+    <ClCompile Include="7Boom2dArray.c" />
     <ClCompile Include="arrayEx1.c" />
     <ClCompile Include="Balance.c" />
     <ClCompile Include="binom.c" />

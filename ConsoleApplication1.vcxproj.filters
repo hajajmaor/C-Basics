@@ -96,6 +96,9 @@
     <ClCompile Include="date.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="7Boom2dArray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="reverse.h">

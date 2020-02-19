@@ -1,31 +1,33 @@
 #include <stdio.h>
-void main23() {
-	/*long num;
-	printf("enter a number: ");
-	scanf_s("%l", &num);
-	int num2 = num;
-	int amountOfNumber = 0;
-	while (num>0)
+#define SIZE 5
+void isArrayPolindrom(int num[SIZE]) {
+	//int num[SIZE] = { 1,2,3,2,1 };
+	int i, isPolindrom = 1;
+	for (i = 0; i < SIZE/2; i++)
 	{
-		amountOfNumber = amountOfNumber + 1;
-		num = num / 10;
+		if (num[i]!=num[SIZE-1-i])
+		{
+			isPolindrom = 0;
+			break;
+		}
 	}
-	int nums[amountOfNumber],i;
-	for (i = 0; i < amountOfNumber; i++)
+	if (isPolindrom)
 	{
-		nums[i] = num2 % 10;
-		num2 = num2 / 10;
+		printf("is Polindrom");
 	}
-	int ifPolindrom = 1;
-	for (i = 0; i < amountOfNumber/2; i++) {
-		if (nums[i] != nums[amountOfNumber - 1 - i])
-			ifPolindrom = 0;
-	}
-	if (ifPolindrom)
-		printf("the number is polindrom");
 	else
-		printf("the number is NOT polindrom");
-
+	{
+		printf("NOT a polindrom");
+	}
+}
+void mainPolindrom() {
+	int num[SIZE];
+	printf("enter %d digit number:\n", SIZE);
+	for (int i = 0; i < SIZE; i++)
+	{
+		scanf_s("%d", &num[i]);
+	}
+	isArrayPolindrom(num);
 	printf("\n");
-	system("pause");*/
+	system("pause");
 }

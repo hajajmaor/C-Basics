@@ -15,7 +15,7 @@ void printDate(int num) {
 	printf("the year is:%d\nthe Month is:%02d\nthe day is:%02d", year, month, day);
 }
 
-void main() {
+void mainDate() {
 	printDate(13062020);
 
 	printf("\n");
